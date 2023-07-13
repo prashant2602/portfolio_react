@@ -3,8 +3,24 @@ import './contact.css'
 import {AiOutlineMail} from 'react-icons/ai'
 import {IoLogoWhatsapp} from 'react-icons/io'
 import {PiLinkedinLogoBold} from 'react-icons/pi'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
+  const form=useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_36ofqih', 'template_7v19ati', form.current, 'oCjbJ2uKNFVEus_6B')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  };
+
   return (
     <section id='contact' className='margin_mob2'>
       <h5>Let's Talk!</h5>
@@ -30,7 +46,7 @@ const Contact = () => {
             <a href='https://api.whatsapp.com/send?phone=+918329191368' target='_blank'>Send a message</a>
           </article>
         </div>
-        <form action=''>
+        <form ref={form} onSubmit={sendEmail}>
           <input type='text' name='name' placeholder='Your Full Name' required/>
           <input type='email' name='email' placeholder='Your Email' required/>
           <textarea name='message' rows='7' placeholder='Your Message' required></textarea>
