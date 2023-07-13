@@ -1,0 +1,45 @@
+.experience_container{
+    text-align: center;
+    height: 110vh;
+    position: relative;
+}
+.experience_card{
+    padding: 2.5%;
+    border: 2px solid whitesmoke;
+    border-radius: 1rem;
+ 
+    gap: 5%;
+}
+
+
+/*====================== Media Queries (MD) =========================== */
+
+@media screen and (max-width: 1024px){
+    .experience_card{
+        padding: 5%;
+        border: 2px solid whitesmoke;
+        border-radius: 1rem;
+        gap: 5%;
+    }
+    
+
+}
+
+
+/*====================== Media Queries (SD) =========================== */
+
+@media screen and (max-width: 600px){
+    .experience_card{
+        padding: 1.5%;
+        border: 2px solid whitesmoke;
+        border-radius: 1rem;
+        gap: 5%;
+    }
+    .experience_container{
+        text-align: center;
+        height: 125vh;
+        position: relative;
+    }
+    
+    
+}
