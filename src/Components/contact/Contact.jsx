@@ -43,7 +43,7 @@ const Contact = () => {
             <PiLinkedinLogoBold/>
             <h4>Linkdlen</h4>
             <h6>Prashant Shrivastava</h6>
-            <a href='https://api.whatsapp.com/send?phone=+918329191368' target='_blank'>Send a message</a>
+            <a href='https://www.linkedin.com/in/prashant-shrivastava-897065217/' target='_blank'>Send a message</a>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
