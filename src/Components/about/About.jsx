@@ -34,12 +34,13 @@ const About = () => {
               <small>Boys Hostel, RCOEM</small>
             </article>
           </div>
-          <p className='about__text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Natus atque soluta, itaque, aut, et possimus alias unde eos 
-            neque distinctio nihil voluptates rem sapiente ratione? Natus 
-            delectus impedit temporibus accusamus?
-            Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit.Soluta dignissimos sapiente praesentium magni.          
+          <p className='about__text'>I am a results-oriented professional 
+          with strong leadership skills and a passion for continuous learning. 
+          With expertise in web development and Android, I excel in dynamic 
+          environments and thrive on challenging projects. I am known for my 
+          smart work approach, delivering high-quality results efficiently. 
+          Eager to contribute my skills and expand my knowledge in an innovative 
+          work environment.          
           </p>
           <a href='#contact' className='btn btn-primary'>Let's Talk</a>
         </div>

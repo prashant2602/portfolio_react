@@ -1,25 +1,44 @@
+
 .experience_container{
     text-align: center;
-    height: 110vh;
+    height: 125vh;
     position: relative;
 }
-.experience_card{
-    padding: 2.5%;
-    border: 2px solid whitesmoke;
+
+.experience__cards{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 1.5rem;
+}
+.exp__card{
+    
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
     border-radius: 1rem;
- 
-    gap: 5%;
+    padding: 1.4rem;
+    text-align: center;
+
 }
 
 
 /*====================== Media Queries (MD) =========================== */
 
-@media screen and (max-width: 1024px){
-    .experience_card{
-        padding: 5%;
-        border: 2px solid whitesmoke;
-        border-radius: 1rem;
-        gap: 5%;
+@media screen and (max-width: 1224px){
+    section{
+        height: 220vh;
+    }
+    .experience_container{
+        text-align: center;
+        height: fit-content;
+        position: relative;
+    }
+    .experience__cards{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        
+    }
+    .exp__card{
+        padding: 0.4rem;
     }
     
 
@@ -29,17 +48,20 @@
 /*====================== Media Queries (SD) =========================== */
 
 @media screen and (max-width: 600px){
-    .experience_card{
-        padding: 1.5%;
-        border: 2px solid whitesmoke;
-        border-radius: 1rem;
-        gap: 5%;
+    section{
+        height: 300vh;
     }
     .experience_container{
         text-align: center;
-        height: 125vh;
         position: relative;
     }
+    .experience__cards{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        
+    }
     
+
+
     
 }

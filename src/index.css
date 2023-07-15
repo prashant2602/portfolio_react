@@ -19,6 +19,7 @@
     --color-light: rgba(255,255,255,0.6);
     --color-img:#f53a3a;
     --color-img-about:#f1d364;
+    --color-exp:whitesmoke;
 
     --transition: all 400ms ease;
 
@@ -58,7 +59,13 @@ h5 {
     font-weight: 500;
 }
 h6{
-    color: var(--color-primary);
+    color: var(--color-exp);
+   
+} 
+
+h7{
+    font-size: 16px;
+    text-align: left;
 }
 
 h1{
@@ -67,7 +74,7 @@ h1{
 
 section{
     margin-top: 5rem;
-    height: 100vh;
+    height: 120vh;
     padding-top: 5%;
 }
 
@@ -141,11 +148,11 @@ img{
     }
     section{
         margin-top: 6rem;
-        height: 100vh;
+        height: 150vh;
     }
     
     section > h2 {
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
         margin-top: 0.5rem;
     }
 }
