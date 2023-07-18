@@ -2,7 +2,7 @@
   
     height: 100vh;
     display: grid;
-    grid-template-columns: 35% 100%;
+    grid-template-columns: 35% 50%;
     gap:12%;
     text-align: center;
 }
@@ -29,10 +29,11 @@ form{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    overflow: hidden;
 }
 input,textarea{
-    width: 50%;
-    padding: 1.5rem;
+    width:100%;
+    padding: 1rem;
     border-radius: 0.5rem;
     background: var(--color-light);
     border: 2px solid var(--color-primary-variant);
